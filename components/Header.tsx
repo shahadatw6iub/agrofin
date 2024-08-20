@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { MenuIcon, LeafIcon } from "./Icons";
-
+import { MdMenu as MenuIcon } from "react-icons/md";
+import { FaLeaf as LeafIcon } from "react-icons/fa";
 const Header = () => {
     return (
         <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -19,13 +19,13 @@ const Header = () => {
                             <span className="sr-only">Toggle navigation menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full max-w-xs">
-                        <nav className="grid gap-4 py-6">
+                    <SheetContent side="right" className="w-full max-w-xs bg-white font-bold">
+                        <nav className="grid gap-4 py-6 ">
                             {['Features', 'Testimonials', 'About', 'Contact'].map((text) => (
                                 <Link
                                     key={text}
                                     href="#"
-                                    className="text-lg font-medium hover:underline underline-offset-4 text-muted-foreground" // Increased text size here
+                                    className="text-sm font-lg font-bold hover:underline underline-offset-4 text-muted-foreground"
                                     prefetch={false}
                                 >
                                     {text}
@@ -39,7 +39,7 @@ const Header = () => {
                         <Link
                             key={text}
                             href="#"
-                            className="text-lg font-medium hover:underline underline-offset-4 text-muted-foreground" // Increased text size here
+                            className="text-sm font-medium hover:underline underline-offset-4 text-muted-foreground"
                             prefetch={false}
                         >
                             {text}

@@ -9,7 +9,7 @@ export function Features() {
     ));
 
     return (
-        <div className="w-full h-full py-20">
+        <div className="w-full h-full py-20 px-4 max-w-screen-xl mx-auto">
             <Carousel items={cards} />
         </div>
     );
@@ -22,9 +22,9 @@ const DummyContent = () => {
                 return (
                     <div
                         key={"dummy-content" + index}
-                        className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                        className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 mx-auto max-w-screen-md"
                     >
-                        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
                             <span className="font-bold text-neutral-700 dark:text-neutral-200">
                                 The first rule of Apple club is that you boast about Apple club.
                             </span>{" "}
@@ -66,7 +66,6 @@ const data = [
         src: "/images/market.jpg",
         content: <DummyContent />,
     },
-
     {
         category: "Sustainable Farming",
         title: "Providing People and the Environment",
