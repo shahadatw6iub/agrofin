@@ -1,5 +1,6 @@
 // components/HeroSection.tsx
 import Link from "next/link";
+import { TechStack } from "./TechStack";
 
 const HeroSection = () => {
     return (
@@ -32,13 +33,7 @@ const HeroSection = () => {
                             </Link>
                         </div>
                     </div>
-                    <img
-                        src="/placeholder.svg"
-                        width="550"
-                        height="550"
-                        alt="Hero"
-                        className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-                    />
+                    <TechStack/>
                 </div>
             </div>
         </section>
