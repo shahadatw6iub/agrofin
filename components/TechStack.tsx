@@ -6,7 +6,7 @@ import { GoCopilot } from "react-icons/go";
 
 export function TechStack() {
     return (
-        <Card className="bg-[#f0f4ec] dark-bg-[#f0f4ec]">
+        <Card className="bg-[#f0f4ec] bg-dark-[#f0f4ec]">
             <CardSkeletonContainer>
                 <Skeleton />
             </CardSkeletonContainer>
