@@ -23,4 +23,4 @@ const Providers = ({ children }: { children: ReactNode }) => (
     </WagmiProvider>
 );
 
-export default Providers ;
+export { Providers };

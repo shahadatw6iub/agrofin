@@ -3,7 +3,8 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Providers from '@/components/RainbowKitProvider';
+import {Providers} from '@/components/Providers';
+import "@rainbow-me/rainbowkit/styles.css";
 
 const fontHeading = Inter({
   subsets: ['latin'],

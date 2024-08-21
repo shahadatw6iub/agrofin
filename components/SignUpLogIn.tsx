@@ -8,6 +8,8 @@ import {
     IconBrandGoogle,
     IconBrandOnlyfans,
 } from "@tabler/icons-react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Link from "next/link";
 
 export function SignUpLogIn() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -45,18 +47,17 @@ export function SignUpLogIn() {
                         type="twitterpassword"
                     />
                 </LabelInputContainer>
-
-                <button
-                    className="bg-gradient-to-br relative group/btn from-green-700 dark:from-green-800 dark:to-green-900 to-green-600 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--green-800)_inset,0px_-1px_0px_0px_var(--green-800)_inset]"
-                    type="submit"
-                >
-                    Sign up &rarr;
-                    <BottomGradient />
-                </button>
-
+                <Link href={"shop"}>
+                    <button
+                        className="bg-gradient-to-br relative group/btn from-green-700 dark:from-green-800 dark:to-green-900 to-green-600 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--green-800)_inset,0px_-1px_0px_0px_var(--green-800)_inset]"
+                        type="submit"
+                    >
+                        Sign up &rarr;
+                        <BottomGradient />
+                    </button>
+                </Link>
 
                 <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
-
                 <div className="flex flex-col space-y-4">
                     <button
                         className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"

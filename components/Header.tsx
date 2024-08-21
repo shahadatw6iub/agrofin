@@ -31,6 +31,7 @@ const Header = () => {
                                     {text}
                                 </Link>
                             ))}
+
                         </nav>
                     </SheetContent>
                 </Sheet>
@@ -44,8 +45,10 @@ const Header = () => {
                         >
                             {text}
                         </Link>
-                        
+
                     ))}
+                    <ConnectButton />
+
                 </nav>
             </div>
         </header>
