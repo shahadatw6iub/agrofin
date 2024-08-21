@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Providers from '@/components/RainbowKitProvider';
 
 const fontHeading = Inter({
   subsets: ['latin'],
@@ -29,12 +30,14 @@ export default function Layout({ children }: LayoutProps) {
           fontHeading.variable,
           fontBody.variable
         )}
-      >
-        <Header />
-        <main className="pb-10"> {/* Adds padding at the bottom */}
-          {children}
-        </main>
-        <Footer />
+      >    <Providers>
+          <Header />
+          <main className=""> {/* Adds padding at the bottom */}
+            {children}
+          </main>
+          <Footer />
+        </Providers>
+
       </body>
     </html>
   );
