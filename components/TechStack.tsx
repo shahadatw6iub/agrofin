@@ -6,17 +6,18 @@ import { GoCopilot } from "react-icons/go";
 
 export function TechStack() {
     return (
-        <Card className="bg-[#f0f4ec] bg-dark-[#f0f4ec]">
+        <Card className="bg-[#f0f4ec] dark:bg-[#1a1a1a]">
             <CardSkeletonContainer>
                 <Skeleton />
             </CardSkeletonContainer>
-            <CardTitle >Leveraged by Blockchain</CardTitle>
+            <CardTitle>Leveraged by Blockchain</CardTitle>
             <CardDescription>
                 Ensuring best of the best
             </CardDescription>
         </Card>
     );
 }
+
 
 const Skeleton = () => {
     const scale = [1, 1.1, 1];
