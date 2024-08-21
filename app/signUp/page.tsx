@@ -18,7 +18,7 @@ export default function page() {
                 </p>
                 <p className="text-lg text-neutral-700 dark:text-neutral-300">
                     Join us on this journey to revolutionize the way the agricultural
-                    industry handles finances, and let's work together to create a
+                    industry handles finances, and lets work together to create a
                     sustainable and prosperous future.
                 </p>
             </div>
