@@ -1,4 +1,4 @@
-// components/Header.tsx
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Link from "next/link";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -44,6 +44,7 @@ const Header = () => {
                         >
                             {text}
                         </Link>
+                        
                     ))}
                 </nav>
             </div>

@@ -5,17 +5,18 @@ import { cn } from "@/lib/utils";
 import { GoCopilot } from "react-icons/go";
 export function TechStack() {
     return (
-        <Card className="bg-[#f0f4ec] bg-dark-[#f0f4ec]">
+        <Card className="bg-[#f0f4ec] dark:bg-[#f0f4ec]">
             <CardSkeletonContainer>
                 <Skeleton />
             </CardSkeletonContainer>
-            <CardTitle >Leveraged by Blockchain</CardTitle>
+            <CardTitle>Leveraged by Blockchain</CardTitle>
             <CardDescription>
                 Ensuring best of the best
             </CardDescription>
         </Card>
     );
 }
+
 
 const Skeleton = () => {
     const scale = [1, 1.1, 1];
@@ -77,10 +78,10 @@ const Skeleton = () => {
                     <ClaudeLogo className="h-4 w-4 " />
                 </Container>
                 <Container className="h-12 w-12 circle-2">
-                    <GoCopilot className="h-6 w-6 dark:text-white" />
+                    <GoCopilot className="h-6 w-6 " />
                 </Container>
                 <Container className="circle-3">
-                    <OpenAILogo className="h-8 w-8 dark:text-white" />
+                    <OpenAILogo className="h-8 w-8 " />
                 </Container>
                 <Container className="h-12 w-12 circle-4">
                     <MetaIconOutline className="h-6 w-6 " />
@@ -127,7 +128,7 @@ const Sparkles = () => {
                         borderRadius: "50%",
                         zIndex: 1,
                     }}
-                    className="inline-block bg-black dark:bg-white"
+                    className="inline-block bg-black "
                 ></motion.span>
             ))}
         </div>
@@ -144,7 +145,7 @@ export const Card = ({
     return (
         <div
             className={cn(
-                "max-w-sm w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
+                "max-w-sm w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
                 className
             )}
         >
@@ -163,7 +164,7 @@ export const CardTitle = ({
     return (
         <h3
             className={cn(
-                "text-lg font-semibold text-gray-800 dark:text-white py-2",
+                "text-lg font-semibold text-gray-800 py-2",
                 className
             )}
         >
@@ -182,7 +183,7 @@ export const CardDescription = ({
     return (
         <p
             className={cn(
-                "text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm",
+                "text-sm font-normal text-neutral-600 max-w-sm",
                 className
             )}
         >
@@ -206,7 +207,7 @@ export const CardSkeletonContainer = ({
                 "h-[15rem] md:h-[20rem] rounded-xl z-40",
                 className,
                 showGradient &&
-                "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
+                "bg-neutral-300 [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
             )}
         >
             {children}
